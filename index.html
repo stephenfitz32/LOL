@@ -14,7 +14,7 @@
  <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
- 
+
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -40,7 +40,7 @@
    
     <meta property="og:site_name" content="Hazelwood | Love our Lane | Co Kildare"/>
 <meta property="og:description" content="Hazelwood - Hazelhatch Park Walkway. All you need to know about the walkway between Hazelwood and Hazelhatch Park. Love our lane celebrates the connection"/>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body, html {
   height: 100%;
@@ -54,7 +54,7 @@ body, html {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
-  /* Added for sticky header */
+  /* Added for header */
   /* Style the header */
 .header {
   padding: 10px 16px;
@@ -67,151 +67,13 @@ body, html {
 .content {
   padding: 16px;
 }
-	
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 102px;
 }
   /* End of Sticky Header bit */
-/* Gallery CSS */
-	.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  height: 80%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-img {
-    width: 100%;
-    height: auto;
-}
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-	/* Gallery End */
   
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
@@ -223,16 +85,16 @@ img.hover-shadow {
 }
 .bgimg-1 {
   background-image: url("Lane.jpg");
-  min-height: 100%;
+  min-height: 80%;
 }
 
 .bgimg-2 {
-  background-image: url("Lane5-small.png");
+  background-image: url("Lane5.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("Lane4-small.png");
+  background-image: url("Lane4.jpg");
   min-height: 400px;
 }
 
@@ -244,17 +106,9 @@ img.hover-shadow {
   text-align: center;
   color: #777;
 }
-.captionQuote {
-  position: absolute;
-  left: 0;
-  top: 30%;
-  width: 100%;
-  text-align: center;
-  color: #777;
-}
 
 .caption span.border {
-  background-color: #111;
+  background-color: #222;
   color: #fff;
   padding: 18px;
   font-size: 25px;
@@ -304,9 +158,10 @@ h3 {
 </head>
 <body>
 
-<!-- HTML for sticky header -->
+<!-- HTML for header -->
  <div class="header" id="myHeader">
   <h3 style="text-align:center;">Love our Lane</h3>
+  <h4 style="text-align:center;">The Hazelwood - Hazelhatch Park Walkway</h4>
    <div style="text-align: left; border=1px">
           <a style="color: black; text-align:left;" href="mailto:info@loveourlane.ie">info@loveourlane.ie</a>
           <span style="float:right;"><a style="color: black; text-align:right;" <a href="https://twitter.com/LoveOurLaneHH?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @LoveOurLaneHH</a></span>   
@@ -322,7 +177,8 @@ h3 {
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">Love Our Lane (LOL)</h3>
   <h4 style="text-align:center;">Celebrating the Connection</h4>
-  <p style="text-align:center;">Celebrating the walkway between Hazelwood and Hazelhatch Park.</p>
+  <p style="text-align:center;">Hazelwood - Hazelhatch Park Walkway was opened during the first phase of Hazelwood development. It connects two beautiful modern housing estates in Celbridge. The walkway allows Hazelwood residents easy access to the Hazelhatch Park Creche, while also allowing Hazelhatch park residents an alternative route to the village.
+    The walkway is designed to allow communities mix. Children use the lane to safely visit each other. This site was established to honor the true value of the walkway and to celebrate its success</p>
 </div>
 
 <div class="bgimg-2">
@@ -330,7 +186,7 @@ h3 {
     <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Connecting People with People <br>#Community</span>
   </div>
 </div>
-
+<!--
 <div style="position:relative;">
   <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">About our Walkway</h3>
@@ -342,109 +198,19 @@ h3 {
 </div>
 
 <div class="bgimg-3">
-    <div class="captionQuote">
+    <div class="caption">
     <span class="border" style="background-color:transparent;font-size:20px;color: #f7f7f7;">"The greatness of a community is most accurately measured by the commpasionate actions of its <del>members</del> walkways<br>-Coretta Scott King</span>
   </div>
 </div>
-
+-->
   
 <div style="position:relative;">
 	<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-		<h3 style="text-align:center;">Gallery</h3>
-		<!-- Gallery Stuff -->
-		<!-- Images used to open the lightbox -->
-<div class="row">
-  <div class="column">
-    <img src="Lane.jpg" width="150" height="100" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="Lane2-small.png" width="150" height="100" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="Lane3-small.png" width="150" height="100" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="Lane4-small.png" width="150" height="100" onclick="openModal();currentSlide(4)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="Lane5-small.png" width="150" height="100" onclick="openModal();currentSlide(4)" class="hover-shadow">
-  </div>
-<div class="column">
-    <img src="Lane6-small.png" width="150" height="100" onclick="openModal();currentSlide(4)" class="hover-shadow">
-  </div>
-</div>
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <img src="Lane.jpg"  style="width:75%; height:auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 /6</div>
-      <img src="Lane2-small.png" style="width:75%; height:auto">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <img src="Lane3-small.png" style="width:75%; height:auto" >
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-	<img src="Lane4-small.png" style="width:75%; height:auto">
-    </div>
-	  
-	<div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-	<img src="Lane5-small.png" style="width:75%; height:25%">
-    </div>
-	  
- <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-	<img src="Lane6-small.png" style="width:75%; height:25%">
-    </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="Lane.jpg" width="150" height="100" onclick="currentSlide(1)" alt="The Lane">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="Lane2-small.png" width="150" height="100" onclick="currentSlide(2)" alt="And Again">
-    </div>
-    <div class="column">
-      <img class="demo" src="Lane3-small.png" width="150" height="100" onclick="currentSlide(3)" alt="More Lane">
-    </div>
-    <div class="column">
-      <img class="demo" src="Lane4-small.png" width="150" height="100" onclick="currentSlide(4)" alt="Tattoo">
-    </div>
- <div class="column">
-      <img class="demo" src="Lane5-small.png" width="150" height="100" onclick="currentSlide(4)" alt="Tattoo">
-    </div>
-	  <div class="column">
-      <img class="demo" src="Lane6-small.png" width="150" height="100" onclick="currentSlide(4)" alt="Tattoo">
-    </div>
-  </div>
-</div>
- <!-- Gallery End -->
+		<h3 style="text-align:center;">Support Our Campaign</h3>
+		<h4 style="text-align:center;">Help others discover our walkway</h4>
+		<p style="text-align:center;">Get Arthur’s Way redirected through our lane - <a href="www.loveourlane.ie">Click here for details</a></p>
 	</div>
 </div>
-	
-	
 
 
 <div class="bgimg-1">
@@ -454,64 +220,6 @@ h3 {
 </div>
    
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script>
-// Open the Modal
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
 
-// Close the Modal
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-<!--Gallery End -->
-  <!-- Script for Sticky Header
-  <script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
-  -->
 </body>
 </html>
