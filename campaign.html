@@ -84,12 +84,12 @@ body, html {
   background-size: cover;
 }
 .bgimg-1 {
-  background-image: url("Lane.jpg");
+  background-image: url("gate1.jpg");
   min-height: 80%;
 }
 
 .bgimg-2 {
-  background-image: url("Lane5-small.png");
+  background-image: url("grave.jpg");
   min-height: 400px;
 }
 
@@ -161,12 +161,12 @@ h3 {
 <!-- HTML for header -->
  <div class="header" id="myHeader">
   <h3 style="text-align:center;">Love our Lane</h3>
-  <h4 style="text-align:center;">The Hazelwood Park - Hazelhatch Park Walkway</h4>
+  <h4 style="text-align:center;">The Hazelwood - Hazelhatch Park Walkway</h4>
    <div style="text-align: center;">
 	   <a style=" color: black;" href="index.html">Home</a>
           &nbsp;
 <a style=" color: black;" href="campaign.html">Campaign</a>
-	     <!-- <a style=" color: black;" href="location.html">Location</a> -->
+	   <!-- <a style=" color: black;" href="location.html">Location</a> -->
           <span style="float:right;"><a style="color: black; text-align:right;" <a href="https://twitter.com/LoveOurLaneHH?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @LoveOurLaneHH</a></span>   
           <span style="float:left;"><a style="color: black; text-align:left;" href="mailto:info@loveourlane.ie">info@loveourlane.ie</a></span>   
    </div>
@@ -174,20 +174,23 @@ h3 {
   
 <div class="bgimg-1">
   <div class="caption">
-    <span class="border">Hazelwood Park - Hazelhatch Park Walkway</span>
+    <span class="border">Arthur's Way</span>
   </div>
 </div>
 
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Love Our Lane (LOL)</h3>
-  <h4 style="text-align:center;">Celebrating the Connection</h4>
-  <p style="text-align:center;">Hazelwood - Hazelhatch Park Walkway was opened during the first phase of Hazelwood development. It connects two beautiful modern housing estates in Celbridge. The walkway allows Hazelwood residents easy access to the Hazelhatch Park Creche, while also allowing Hazelhatch park residents an alternative route to the village.
-    The walkway is designed to allow communities mix. Children use the lane to safely visit each other. This site was established to honor the true value of the walkway and to celebrate its success</p>
+  <h3 style="text-align:center;">Get Arthur's Way Redirected</h3>
+  <p style="text-align:center;">Arthur's way is an established trail celebrating the life of Arthur Guinness. The trail passes along the front of Hazelwood Park and Hazelhatch Park estates.
+LOL are campaigning to have Arthur's Way redirected to go via our beloved walkway. 
+We strongly believe that if the walkway had been established back in 1700s, Arthur himself would have truly appreciated the lane and been one of its most regular users. Therefore we feel it only right that the walkway features on the official trail
+It is also wildly rumored around Celbridge that Arthur Guinness may have been conceived at this exact spot where the walkway now exists. But who knows for sure!!!!
+If you would like to support LOLs campaign please fill in the form below.</p>
+<p>If you are interested in learning more about Arthur's Way please visit <a href="https://intokildare.ie/listing/arthurs-way/">Arthur's Way Website</a></p>
 </div>
 
 <div class="bgimg-2">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Connecting People with People <br>#Community</span>
+    <span class="border">LOL - Celebrating the life of Arthur Guinness</span>
   </div>
 </div>
 <!--
@@ -210,20 +213,33 @@ h3 {
   
 <div style="position:relative;">
 	<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-		<h3 style="text-align:center;">Support Our Campaign</h3>
-		<h4 style="text-align:center;">Help others discover our walkway</h4>
-		<p style="text-align:center;">Get Arthur’s Way redirected through our lane - <a href="campaign.html">Click here for details</a></p>
+		<h3 style="text-align:center;">Fill in the form below if you support our campaign</h3>
+		<h4 style="text-align:center;">Make KCC Listen!!!</h4>
+				<form style="color: #777;background-color:white;text-align:center" action="post" method="post">
+				<label for="Name">Name:</label><input type="text" name="Name">
+				<br>
+            <label for="Email">Email:</label><input type="text" name="Email">
+            <br>
+            <input type="checkbox" name="Support" value="true"><label for="Name">I support this campaign</label>
+				<br>
+				<button name="Submit" value="Submit" type="button" onclick="myAlert()">Submit</button>
+				</form>
 	</div>
 </div>
-
+ 
 
 <div class="bgimg-3">
   <div class="caption">
-  <span class="border" style="background-color:black;font-size:25px;color: #f7f7f7;">Your thoughts to <a style="color:white" href="mailto:loveourlane.ie">info@loveourlane.ie</a></span>
+<span class="border" style="background-color:black;font-size:25px;color: #f7f7f7;">Your thoughts to <a style="color:white" href="mailto:loveourlane.ie">info@loveourlane.ie</a></span>
   </div>
 </div>
    
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+function myAlert() {
+    alert("Ah, we are not really doing this, but thanks for the support! Email or tweet us with feedback");
+}
+</script>
 
 </body>
 </html>
